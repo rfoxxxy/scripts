@@ -121,6 +121,11 @@ git config --global user.name "Jyotiraditya"
 git config --global user.email "imjyotiraditya@pm.me"
 fi
 
+if [[ $USER == "clownless" ]]; then
+git config --global user.name "clownless"
+git config --global user.email "m4x3r1337@yandex.ru"
+fi
+
 git config --global alias.cp 'cherry-pick'
 git config --global alias.c 'commit'
 git config --global alias.f 'fetch'
