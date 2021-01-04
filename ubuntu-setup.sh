@@ -91,8 +91,8 @@ if [ -d "$HOME/platform-tools" ] ; then
 fi
 EOF
 
-# Set time zone to IST
-sudo ln -sf /usr/share/zoneinfo/Asia/Calcutta /etc/localtime
+# Set time zone to GMT+3
+sudo ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 
 # Set env from .bashrc and .profile
 source .profile
@@ -124,6 +124,11 @@ fi
 if [[ $USER == "clownless" ]]; then
 git config --global user.name "clownless"
 git config --global user.email "m4x3r1337@yandex.ru"
+fi
+
+if [[ $USER == "rf0x3d" ]]; then
+git config --global user.name "rf0x3d"
+git config --global user.email "yarekfrolov@gmail.com"
 fi
 
 git config --global alias.cp 'cherry-pick'
