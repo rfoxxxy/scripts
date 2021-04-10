@@ -23,7 +23,7 @@ sudo apt install -y -qq bc bison build-essential curl flex g++-multilib gcc-mult
                         libncurses5-dev libsdl1.2-dev libxml2 libxml2-utils lzop pngcrush \
                         schedtool squashfs-tools xsltproc zip zlib1g-dev unzip openjdk-8-jdk python ccache \
                         libtinfo5 libncurses5 android-tools-adb tmux libssl-dev neofetch patchelf apktool \
-                        python-dev python3-dev
+                        python-dev python3-dev screen lld llvm 
 
 if [[ $(lsb_release -rs) == "20"* ]]; then
 sudo apt install -y -qq libwxgtk3.0-gtk3-dev
@@ -116,14 +116,9 @@ git config --global review.review.lineageos.org.username "ghostrider-reborn"
 git config --global review.review.arrowos.net.username "ghostrider_reborn"
 fi
 
-if [[ $USER == "panda" ]]; then
-git config --global user.name "Jyotiraditya"
-git config --global user.email "imjyotiraditya@pm.me"
-fi
-
-if [[ $USER == "clownless" ]]; then
-git config --global user.name "clownless"
-git config --global user.email "m4x3r1337@yandex.ru"
+if [[ $USER == "clownless" ]] || [[ $USER == "m4x3r" ]]; then
+git config --global user.name "cuwul3ss"
+git config --global user.email "me@m4x3r.xyz"
 fi
 
 if [[ $USER == "rf0x3d" ]]; then
